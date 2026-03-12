@@ -236,7 +236,7 @@ def main() :
             "content" : "What's the weather like in San Francisco?"
         }
     ]
-    #print(num_tokens_from_messages(messages, "gpt-5")) # 33 tokens( will end up spending less if openai or anthropic cache your input tokens over time to reduce the amount you send it to gpus)
+    #print(num_tokens_from_messages(messages, "gpt-5")) # 33 tokens( will end up spending less if openai or anthropic cache your input tokens over time to reduce the amount you send it to gpus). Also useful when using long context window
 
     # tool-calling call out specific python function, define tools in api format
     tools = [
